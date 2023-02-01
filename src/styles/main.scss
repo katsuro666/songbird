@@ -16,8 +16,10 @@
 @import
   'layout/header',
   'layout/footer',
-  'layout/welcome-page';
+  'layout/welcome-page',
+  'layout/quiz-page';
 
 // 4. Components
 @import
-  'components/button';
+  'components/button',
+  'components/top-panel';

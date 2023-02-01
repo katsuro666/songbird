@@ -225,4 +225,30 @@ body {
   box-shadow: 0px 15px 20px rgba(79, 72, 83, 0.4);
   color: #2c0d1f;
   transform: translateY(-7px);
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-panel ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.tp__el {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(90deg, rgb(248, 219, 229) 0%, rgb(255, 252, 247) 50%, rgb(248, 219, 229) 100%);
+  color: #765f68;
+}
+
+.tp--curr {
+  background: #E7A1AC;
+  color: #fffcf7;
 }/*# sourceMappingURL=main.css.map */

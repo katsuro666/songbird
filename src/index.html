@@ -12,33 +12,51 @@
     <title>songbird</title>
   </head>
   <body>
-    <header class="header visually-hidden">
+    <header class="header">
       <div class="header-wrapper container">
         <div class="header__logo"></div>
       </div>
     </header>
 
     <main>
-      <div class="welcome">
-        <!-- <div class="--hide"> -->
+      <!-- <div class="welcome"> -->
+      <div class="--hide">
         <video autoplay muted plays-inline loop class="welcome__video">
-          <source src="assets/images/birds.mp4" type="video/mp4">
+          <source src="assets/images/birds.mp4" type="video/mp4" />
         </video>
 
         <div class="welcome__content">
-          <h2 class="welcome__desc">Я тебе предлагаю сыграть в игру. Нужно будет угадать названия птиц по
-            звуку. Сыграем?</h2>
+          <h2 class="welcome__desc">
+            Я тебе предлагаю сыграть в игру. Нужно будет угадать названия птиц
+            по звуку. Сыграем?
+          </h2>
 
           <div class="welcome-buttons">
             <button class="welcome__button cancel-btn">Cancel</button>
             <button class="welcome__button accept-btn">Accept</button>
           </div>
         </div>
-
       </div>
+
+      <!-- WELCOME PAGE ENDS HERE -->
+
+      <div class="quiz container">
+        <div class="top-panel">
+          <ul>
+            <li class="tp__el tp--curr">Птица</li>
+            <li class="tp__el">Птица 2</li>
+            <li class="tp__el">Птица 3</li>
+            <li class="tp__el">Птица 4</li>
+            <li class="tp__el">Птица 5</li>
+            <li class="tp__el">Птица 6</li>
+          </ul>
+        </div>
+      </div>
+
+
     </main>
 
-    <footer class="footer visually-hidden">
+    <footer class="footer">
       <div class="footer-wrapper container">
         <a
           href="https://github.com/katsuro666"
