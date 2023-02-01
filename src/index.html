@@ -1,10 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet" />
     <title>songbird</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header visually-hidden">
+      <div class="header-wrapper container">
+        <div class="header__logo"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="welcome">
+        <video autoplay muted plays-inline loop class="welcome__video">
+          <source src="assets/images/birds.mp4" type="video/mp4">
+        </video>
+
+        <div class="welcome__content">
+          <h2 class="welcome__desc">Я тебе предлагаю сыграть в игру. Нужно будет угадать названия птиц по
+            звуку. Сыграем?</h2>
+
+          <div class="welcome-buttons">
+            <button class="welcome__button cancel-btn">Cancel</button>
+            <button class="welcome__button accept-btn">Accept</button>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer visually-hidden">
+      <div class="footer-wrapper container">
+        <a
+          href="https://github.com/katsuro666"
+          target="_blank"
+          class="footer__gh">
+          <div class="github-logo"></div>
+        </a>
+
+        <p class="footer__year">2023</p>
+
+        <a href="https://rs.school/js/" target="_blank" class="footer__rss">
+          <div class="rss-logo"></div>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

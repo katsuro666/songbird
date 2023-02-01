@@ -25,11 +25,17 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/,
+        use: {
+          loader: "html-loader",
+        }
+      },
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(png|jpg|jpeg|svg|gif)$/,
+        test: /\.(png|jpg|jpeg|svg|gif|mp4)$/,
         type: 'asset/resource'
       },
       {

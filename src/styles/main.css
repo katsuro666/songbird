@@ -21,19 +21,32 @@ html {
  * Basic styles for links
  */
 a {
-  color: rgb(34, 34, 34);
+  color: #765f68;
   text-decoration: none;
 }
 a:hover, a:active, a:focus, a:focus-within {
-  color: rgb(34, 34, 34);
+  color: #765f68;
+}
+
+body {
+  background: radial-gradient(circle, rgb(249, 220, 211) 16%, rgb(206, 171, 209) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 /**
  * Basic typography style for copy text
  */
 body {
-  color: rgb(34, 34, 34);
-  font: normal 100%/1.5 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #765f68;
+  font: normal 100%/1.5 "Merriweather", serif;
 }
 
 /**
@@ -86,4 +99,126 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.header {
+  flex: 0 0 auto;
+  background: linear-gradient(45deg, rgb(248, 219, 229) 0%, rgb(255, 252, 247) 94%);
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  background: url(../assets/icons/logo.png) no-repeat;
+  background-size: contain;
+  width: 64px;
+  height: 48px;
+  margin: 5px 0;
+}
+
+.footer {
+  background: linear-gradient(45deg, rgb(248, 219, 229) 0%, rgb(255, 252, 247) 94%);
+  flex: 0 0 auto;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__gh {
+  width: 50px;
+}
+
+.footer__rss {
+  align-items: center;
+  width: 100px;
+  padding-top: 10px;
+}
+
+.github-logo {
+  background: url(../assets/icons/github-logo.svg) no-repeat;
+  background-size: contain;
+  max-width: 50px;
+  height: 50px;
+}
+
+.rss-logo {
+  background: url(../assets/icons/rs_school-logo.svg) no-repeat;
+  background-size: contain;
+  max-width: 100px;
+  height: 50px;
+}
+
+.welcome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.welcome__video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 5;
+}
+
+.welcome__content {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(248, 219, 229, 0.4);
+  z-index: 10;
+}
+
+.welcome__desc {
+  text-align: center;
+  font-size: larger;
+  font-weight: 700;
+  margin: 20px auto 0;
+  color: #2c0d1f;
+}
+
+.welcome-buttons {
+  margin: 50px auto;
+}
+
+.welcome__button {
+  width: 25vw;
+  height: 6vh;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #765f68;
+  background-color: #fffcf7;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.welcome__button.cancel-btn:hover {
+  background-color: rgb(253, 177, 185);
+  box-shadow: 0px 15px 20px rgba(83, 72, 76, 0.4);
+  color: #2c0d1f;
+  transform: translateY(-7px);
+}
+
+.welcome__button.accept-btn:hover {
+  background-color: rgb(228, 184, 255);
+  box-shadow: 0px 15px 20px rgba(79, 72, 83, 0.4);
+  color: #2c0d1f;
+  transform: translateY(-7px);
 }/*# sourceMappingURL=main.css.map */

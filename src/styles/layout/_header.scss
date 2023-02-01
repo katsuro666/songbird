@@ -1,0 +1,19 @@
+.header {
+  flex: 0 0 auto;
+  @include cards-gradient;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  background: url(../assets/icons/logo.png) no-repeat;
+  background-size: contain;
+  width: 64px;
+  height: 48px;
+  margin: 5px 0;
+  // outline: 3px solid red;
+
+}

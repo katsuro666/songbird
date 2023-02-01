@@ -7,6 +7,7 @@
  */
 html {
   box-sizing: border-box;
+  // height: 100%;
 }
 
 /**
@@ -31,4 +32,17 @@ a {
   @include on-event {
     color: $text-color;
   }
+}
+
+body {
+  @include main-gradient;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
 }
