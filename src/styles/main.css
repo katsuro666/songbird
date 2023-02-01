@@ -154,6 +154,10 @@ body {
   height: 50px;
 }
 
+.--hide {
+  display: none;
+}
+
 .welcome {
   position: relative;
   display: flex;
