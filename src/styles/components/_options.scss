@@ -1,0 +1,39 @@
+.options {
+  width: 50%;
+  height: fit-content;
+  @include cards-gradient;
+  box-shadow: 0 9px 28px rgb(0 0 0 / 30%), 0 8px 12px rgb(0 0 0 / 22%);
+
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.options__el {
+  padding: 10px 15px 10px 25px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  &:hover {
+      scale: 1.02;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      cursor: pointer;
+      color: $picked-text-color;
+  }
+}
+
+.--wrong {
+  background-color: rgba(213,76,128, 0.3);
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  text-decoration: line-through;
+}
+
+.--right {
+  background-color: rgba(108, 215, 176, 0.5);
+
+}

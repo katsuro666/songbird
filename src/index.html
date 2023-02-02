@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet" />
     <title>songbird</title>
   </head>
@@ -23,8 +23,7 @@
     </header>
 
     <main>
-      <!-- <div class="welcome"> -->
-      <div class="--hide">
+      <!-- <div class="welcome">
         <video autoplay muted plays-inline loop class="welcome__video">
           <source src="assets/images/birds.mp4" type="video/mp4" />
         </video>
@@ -40,7 +39,7 @@
             <button class="welcome__button accept-btn">Accept</button>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- WELCOME PAGE ENDS HERE -->
 
@@ -63,10 +62,46 @@
             <h3 class="question__name">******</h3>
 
             <div class="audio-player-container">
-              <audio
-                id="player"
-                controls
-                ></audio>
+              <audio class="player" controls></audio>
+            </div>
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="options">
+            <ul>
+              <li class="options__el">bird1</li>
+              <li class="options__el">bird2</li>
+              <li class="options__el">bird3</li>
+              <li class="options__el">bird4</li>
+              <li class="options__el">bird5</li>
+              <li class="options__el">bird6</li>
+            </ul>
+          </div>
+
+          <div class="description">
+            <p class="description__invitation visually-hidden">
+              Послушайте плеер, а затем выберите птицу из списка
+            </p>
+
+            <div class="description-wrapper">
+              <div class="description__about">
+                <div class="desc__img"></div>
+
+                <div class="desc__info">
+                  <div class="desc__name">Птица</div>
+                  <hr class="hr1" />
+                  <div class="desc__name-latin">Ptitsa</div>
+                  <hr class="hr2" />
+                  <audio class="player" controls></audio>
+                </div>
+              </div>
+
+              <div class="description__text">
+                Это самая лучшая птица в мире, только послушайте как она
+                звучит! Звучит просто офигенно, даже не предеать словами. в общем,
+                послушайте
+              </div>
             </div>
           </div>
         </div>

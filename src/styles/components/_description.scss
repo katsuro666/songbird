@@ -1,0 +1,60 @@
+.description {
+  width: 50%;
+  @include cards-gradient;
+  box-shadow: 0 9px 28px rgb(0 0 0 / 30%), 0 8px 12px rgb(0 0 0 / 22%);
+  padding: 10px 15px;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.description__about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.desc__img {
+  width: 200px;
+  height: 150px;
+  background: $highlight-light;
+}
+
+.desc__info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.desc__name {
+  font-size: 18px;
+  font-weight: 700;
+  color: $picked-text-color;
+  text-align: center;
+}
+
+.desc__name-latin {
+  font-size: 14px;
+  text-align: center;
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid $text-color;
+  overflow: visible;
+  text-align: center;
+  height: 1px;
+  opacity: 0.3;
+  width: 75%;
+}
+
+.hr1 {
+  width: 50%;
+}
+
+.description__text {
+  padding: 5px 10px;
+}

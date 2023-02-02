@@ -46,7 +46,7 @@ main {
  */
 body {
   color: #765f68;
-  font: normal 100%/1.5 "Merriweather", serif;
+  font: normal 100%/1.5 "Roboto", sans-serif;
 }
 
 /**
@@ -295,6 +295,11 @@ body {
   background: transparent;
 }
 
+.desc__player {
+  width: 100%;
+  height: 30px;
+}
+
 audio {
   width: 100%;
   height: 50px;
@@ -313,4 +318,111 @@ audio::-webkit-media-controls-current-time-display {
 audio::-webkit-media-controls-time-remaining-display {
   color: #2c0d1f;
   font-size: 16px;
+}
+
+.answer {
+  display: flex;
+  flex-wrap: nowrap;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+
+.options {
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: linear-gradient(45deg, rgb(248, 219, 229) 0%, rgb(255, 252, 247) 94%);
+  box-shadow: 0 9px 28px rgba(0, 0, 0, 0.3), 0 8px 12px rgba(0, 0, 0, 0.22);
+}
+.options ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.options__el {
+  padding: 10px 15px 10px 25px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.options__el:hover {
+  scale: 1.02;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  color: #2c0d1f;
+}
+
+.--wrong {
+  background-color: rgba(213, 76, 128, 0.3);
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  text-decoration: line-through;
+}
+
+.--right {
+  background-color: rgba(108, 215, 176, 0.5);
+}
+
+.description {
+  width: 50%;
+  background: linear-gradient(45deg, rgb(248, 219, 229) 0%, rgb(255, 252, 247) 94%);
+  box-shadow: 0 9px 28px rgba(0, 0, 0, 0.3), 0 8px 12px rgba(0, 0, 0, 0.22);
+  padding: 10px 15px;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.description__about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.desc__img {
+  width: 200px;
+  height: 150px;
+  background: #E7A1AC;
+}
+
+.desc__info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.desc__name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c0d1f;
+  text-align: center;
+}
+
+.desc__name-latin {
+  font-size: 14px;
+  text-align: center;
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #765f68;
+  overflow: visible;
+  text-align: center;
+  height: 1px;
+  opacity: 0.3;
+  width: 75%;
+}
+
+.hr1 {
+  width: 50%;
+}
+
+.description__text {
+  padding: 5px 10px;
 }/*# sourceMappingURL=main.css.map */
