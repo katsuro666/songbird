@@ -287,6 +287,7 @@ body {
 
 .question__name {
   margin-left: 5%;
+  color: #2c0d1f;
 }
 
 .audio-player-container {
@@ -425,4 +426,33 @@ hr {
 
 .description__text {
   padding: 5px 10px;
+}
+
+.next-lvl-btn {
+  height: 40px;
+  margin: 15px 0;
+  border: none;
+  background-color: #E7A1AC;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2c0d1f;
+  transition: all 0.3s ease-in-out;
+}
+.next-lvl-btn:hover {
+  background-color: #ceabd1;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+.--disabled {
+  background: linear-gradient(45deg, rgb(248, 219, 229) 0%, rgb(255, 252, 247) 94%);
+  opacity: 0.5;
+  cursor: auto;
+}
+.--disabled:hover {
+  letter-spacing: 1px;
+  cursor: default;
 }/*# sourceMappingURL=main.css.map */
