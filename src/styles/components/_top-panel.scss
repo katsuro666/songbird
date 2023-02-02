@@ -1,13 +1,14 @@
 .top-panel {
-  //@at-root
+width: 100%;
+
   & ul {
+    // position:fixed;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-between;
     list-style: none;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    // outline: 3px solid red;
   }
 }
 
@@ -16,6 +17,7 @@
   text-align: center;
   background: linear-gradient(90deg, rgba(248,219,229,1) 0%, rgba(255,252,247,1) 50%, rgba(248,219,229,1) 100%);
   color: $text-color;
+  padding: 4px 8px;
 }
 
 .tp--curr {
