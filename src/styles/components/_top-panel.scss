@@ -1,5 +1,6 @@
 .top-panel {
-width: 100%;
+// width: 100%;
+
 
   & ul {
     padding: 0;
@@ -8,16 +9,24 @@ width: 100%;
     justify-content: space-between;
     list-style: none;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
+    @include media-mobile {
+      flex-wrap: wrap;
+    }
   }
 }
 
 .tp__el {
-  // width: 100%;
+  width: 100%;
   font-size: 14px;
   text-align: center;
   background: linear-gradient(90deg, rgba(248,219,229,1) 0%, rgba(255,252,247,1) 50%, rgba(248,219,229,1) 100%);
   color: $text-color;
   padding: 2px 4px;
+
+  @include media-mobile {
+    width: 50%;
+  }
 }
 
 .tp--curr {

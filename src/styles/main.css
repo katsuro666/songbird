@@ -303,9 +303,6 @@ body {
   transform: translateY(-7px);
 }
 
-.top-panel {
-  width: 100%;
-}
 .top-panel ul {
   padding: 0;
   margin: 0;
@@ -314,13 +311,24 @@ body {
   list-style: none;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
+@media (max-width: 480px) {
+  .top-panel ul {
+    flex-wrap: wrap;
+  }
+}
 
 .tp__el {
+  width: 100%;
   font-size: 14px;
   text-align: center;
   background: linear-gradient(90deg, rgb(248, 219, 229) 0%, rgb(255, 252, 247) 50%, rgb(248, 219, 229) 100%);
   color: #765f68;
   padding: 2px 4px;
+}
+@media (max-width: 480px) {
+  .tp__el {
+    width: 50%;
+  }
 }
 
 .tp--curr {
