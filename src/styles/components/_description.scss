@@ -26,10 +26,16 @@
 }
 
 .desc__img {
+  background-size: 100% 100%;
+  border-radius: 5px;
+  margin-right: 20px;
   width: 200px;
   height: 150px;
   background: $highlight-light;
 
+  @include media-tablet {
+    margin-right: 0;
+  }
 }
 
 .desc__info {
