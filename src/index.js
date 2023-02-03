@@ -5,3 +5,4 @@ import "./index.html";
 // import "./js/welcome-page/welcome";
 import './js/quiz-page/options';
 import './js/result-page/final';
+import './js/quiz-page/question';
