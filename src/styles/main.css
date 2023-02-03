@@ -188,6 +188,11 @@ body {
   background-color: rgba(248, 219, 229, 0.4);
   z-index: 10;
 }
+@media (max-width: 480px) {
+  .welcome__content {
+    padding: 0 15px;
+  }
+}
 
 .welcome__desc {
   text-align: center;
@@ -199,6 +204,11 @@ body {
 
 .welcome-buttons {
   margin: 50px auto;
+}
+@media (max-width: 480px) {
+  .welcome-buttons {
+    margin: 15px auto;
+  }
 }
 
 .welcome__button {
@@ -306,11 +316,11 @@ body {
 }
 
 .tp__el {
-  width: 100%;
+  font-size: 14px;
   text-align: center;
   background: linear-gradient(90deg, rgb(248, 219, 229) 0%, rgb(255, 252, 247) 50%, rgb(248, 219, 229) 100%);
   color: #765f68;
-  padding: 4px 8px;
+  padding: 2px 4px;
 }
 
 .tp--curr {
