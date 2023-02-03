@@ -1,8 +1,7 @@
-.--hide {
+.result--hide {
   display: none;
 }
-
-.welcome {
+.result {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -12,24 +11,7 @@
   z-index: 0;
 }
 
-.video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 5;
-}
-
-.welcome__content {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(248, 219, 229, 0.4);
-
-  z-index: 10;
-}
-
-.welcome__desc {
+.result__desc {
   text-align: center;
   font-size: larger;
   font-weight: 700;
@@ -37,17 +19,23 @@
   color: $picked-text-color;
 }
 
-.welcome-buttons {
-  margin: 50px auto;
+.result--win, .result--lose {
+  text-align: center;
+  font-size: 18px;
+  color: $picked-text-color;
 }
 
-.welcome__button {
+.result-btn-container {
+  margin: 20px auto;
+}
+
+.result__button {
   width: 25vw;
   height: 6vh;
   font-family: 'Merriweather', serif;
   font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  letter-spacing: 1.5px;
   color: $text-color;
   background-color: $cards-light;
   border: none;
@@ -58,17 +46,9 @@
   outline: none;
 }
 
-.welcome__button.cancel-btn:hover {
+.result__button:hover {
   background-color: rgb(253, 177, 185);
   box-shadow: 0px 15px 20px rgba(83, 72, 76, 0.4);
   color: $picked-text-color;
   transform: translateY(-7px);
 }
-
-.welcome__button.accept-btn:hover {
-  background-color: rgb(228, 184, 255);
-  box-shadow: 0px 15px 20px rgba(79, 72, 83, 0.4);
-  color: $picked-text-color;
-  transform: translateY(-7px);
-}
-

@@ -23,8 +23,8 @@
     </header>
 
     <main>
-      <!-- <div class="welcome">
-        <video autoplay muted plays-inline loop class="welcome__video">
+      <!-- <div class="welcome --hide">
+        <video autoplay muted plays-inline loop class="video">
           <source src="assets/images/birds.mp4" type="video/mp4" />
         </video>
 
@@ -107,6 +107,24 @@
         </div>
 
         <button class="next-lvl-btn --disabled">Следующий уровень</button>
+      </div>
+
+      <div class="result--hide">
+        <video autoplay muted plays-inline loop class="video">
+          <source src="assets/images/result.mp4" type="video/mp4" />
+        </video>
+
+        <div class="welcome__content">
+          <h2 class="result__desc">
+            Твой результат: <span class="result-score">0</span> / 30.
+          </h2>
+          <p class="resultl--win visually-hidden">А ты знаток! <br> Поздравляю, у тебя максимальное количество баллов! </p>
+          <p class="result--lose visually-hidden">Неплохой результат, сыграем ещё раз?</p>
+
+          <div class="result-btn-container visually-hidden">
+            <button class="result__button">Начать заново</button>
+          </div>
+        </div>
       </div>
     </main>
 

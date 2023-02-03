@@ -1,0 +1,6 @@
+let final = document.querySelector('.final')
+let finalHidden = document.querySelector('.final--hide')
+let finalWin = document.querySelector('.final--win')
+let finalLose = document.querySelector('.final--lose')
+let btnContainer = document.querySelector('.final-btn-container')
+let finalBtn = document.querySelector('.final__button')
