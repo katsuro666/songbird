@@ -342,13 +342,24 @@ body {
   display: flex;
   box-shadow: 0 9px 28px rgba(0, 0, 0, 0.3), 0 8px 12px rgba(0, 0, 0, 0.22);
 }
+@media (max-width: 480px) {
+  .question {
+    margin: 15px 0;
+    flex-direction: column;
+  }
+}
 
 .question__picture {
   background: url(../assets/images/guess.png) no-repeat;
   background-size: contain;
   width: 150px;
-  height: 130px;
+  height: 150px;
   margin: 10px;
+}
+@media (max-width: 480px) {
+  .question__picture {
+    margin: 10px auto;
+  }
 }
 
 .question__section {
@@ -358,10 +369,20 @@ body {
   width: 100%;
   background: linear-gradient(45deg, rgb(248, 219, 229) 0%, rgb(255, 252, 247) 94%);
 }
+@media (max-width: 480px) {
+  .question__section {
+    align-items: center;
+  }
+}
 
 .question__name {
   margin-left: 5%;
   color: #2c0d1f;
+}
+@media (max-width: 480px) {
+  .question__name {
+    margin: 15px auto 10px;
+  }
 }
 
 .audio-player-container {

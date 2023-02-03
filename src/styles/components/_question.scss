@@ -3,14 +3,23 @@
   margin: 30px 0;
   display: flex;
   box-shadow: 0 9px 28px rgb(0 0 0 / 30%), 0 8px 12px rgb(0 0 0 / 22%);
+
+  @include media-mobile {
+    margin: 15px 0;
+    flex-direction: column;
+  }
 }
 
 .question__picture {
   background: url(../assets/images/guess.png) no-repeat;
   background-size: contain;
   width: 150px;
-  height: 130px;
+  height: 150px;
   margin: 10px;
+
+  @include media-mobile {
+    margin: 10px auto;
+  }
 }
 
 .question__section {
@@ -19,9 +28,17 @@
   justify-content: space-between;
   width: 100%;
   @include cards-gradient;
+
+  @include media-mobile {
+    align-items: center;
+  }
 }
 
 .question__name {
   margin-left: 5%;
   color: $picked-text-color;
+
+   @include media-mobile {
+    margin: 15px auto 10px;
+   }
 }
