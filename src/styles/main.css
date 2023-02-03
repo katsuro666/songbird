@@ -548,7 +548,6 @@ audio::-webkit-media-controls-time-remaining-display {
   margin-right: 20px;
   width: 200px;
   height: 150px;
-  background: #E7A1AC;
 }
 @media (max-width: 768px) {
   .desc__img {
