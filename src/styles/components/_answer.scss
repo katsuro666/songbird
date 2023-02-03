@@ -2,4 +2,9 @@
   display: flex;
   flex-wrap: nowrap;
   column-gap: 5%;
+
+  @include media-mobile {
+    flex-direction: column;
+    
+  }
 }
