@@ -1,27 +1,38 @@
 import birdsData from "./helpers/birdsData";
-import getRandomInt from "./helpers/getRandomInt"
-import shuffle from "./helpers/shuffleArray"
+import getRandomInt from "./helpers/getRandomInt";
+import {nextLvlBtn} from './next-lvl-btn';
 
 let picture = document.querySelector('.question__picture')
+let guessedPicture = document.querySelector('.question__picture--guessed')
 let name = document.querySelector('.question__name')
 let player = document.querySelector('.question__player')
 
-
 let typeOfBirdIndex = 0
-
 
 function randomBird() {
   return birdsData[typeOfBirdIndex][getRandomInt(0, 5)]
 }
-let bird = randomBird(typeOfBirdIndex)
+let bird = randomBird()
 let birdSound = bird.audio
 player.src = birdSound
 
-console.log(bird)
+function setRandomBird() {
+  bird = birdsData[typeOfBirdIndex][getRandomInt(0, 5)]
+  birdSound = bird.audio
+  player.src = birdSound
+}
 
 function showGuessedBird() {
-  picture.style.backgroundImage = `url(${bird.image})`
+  guessedPicture.classList.remove('visually-hidden')
+  guessedPicture.style.backgroundImage = `url(${bird.image})`
   name.textContent = bird.name
 }
+
+nextLvlBtn.addEventListener('click', () => {
+  typeOfBirdIndex++
+  setRandomBird()
+  guessedPicture.classList.add('visually-hidden')
+  name.textContent = '******'
+})
 
 export {typeOfBirdIndex, bird, showGuessedBird}

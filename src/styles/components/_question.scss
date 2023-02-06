@@ -10,6 +10,18 @@
   }
 }
 
+.question__picture--guessed {
+  background-size: 100% 100%;
+  border-radius: 5px;
+  width: 250px;
+  height: 180px;
+  // margin: 10px;
+
+  @include media-mobile {
+    margin: 10px auto;
+  }
+}
+
 .question__picture {
   background: url(../assets/images/guess.png) no-repeat;
   background-size: 100% 100%;

@@ -7,19 +7,14 @@ let descLatinName = document.querySelector('.desc__name-latin')
 let descPlayer = document.querySelector('.desc__player')
 let descText = document.querySelector('.description__text')
 
-let arrOfCurrTypeBirds = birdsData[typeOfBirdIndex]
-
-
-console.log(arrOfCurrTypeBirds)
-
 export default function showDesc(bird) {
-  for (let i = 0; i < arrOfCurrTypeBirds.length; i++) {
-    if (arrOfCurrTypeBirds[i].name === bird) {
-      descImg.style.backgroundImage = `url(${arrOfCurrTypeBirds[i].image})`
-      descName.textContent = arrOfCurrTypeBirds[i].name
-      descLatinName.textContent = arrOfCurrTypeBirds[i].species
-      descPlayer.src = arrOfCurrTypeBirds[i].audio
-      descText.textContent = arrOfCurrTypeBirds[i].description
+  for (let i = 0; i < birdsData[typeOfBirdIndex].length; i++) {
+    if (birdsData[typeOfBirdIndex][i].name === bird) {
+      descImg.style.backgroundImage = `url(${birdsData[typeOfBirdIndex][i].image})`
+      descName.textContent = birdsData[typeOfBirdIndex][i].name
+      descLatinName.textContent = birdsData[typeOfBirdIndex][i].species
+      descPlayer.src = birdsData[typeOfBirdIndex][i].audio
+      descText.textContent = birdsData[typeOfBirdIndex][i].description
     }
   }
 }
