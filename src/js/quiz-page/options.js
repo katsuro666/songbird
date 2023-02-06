@@ -9,7 +9,7 @@ import {countScore} from './score'
 let options = document.querySelectorAll('.options__el')
 let descInvitation = document.querySelector('.description__invitation')
 let descWrapper = document.querySelector('.description-wrapper')
-let score = document.querySelector('.score')
+let player = document.querySelector('.question__player')
 
 let concatArr = birdsData[typeOfBirdIndex].concat()
 let arrOfCurrTypeBirds = shuffle(concatArr)
@@ -25,6 +25,7 @@ function answerSelected() {
     this.classList.add('--right')
     showGuessedBird()
     countScore(points)
+    player.pause()
     points = 5
     nextLvlBtn.disabled = false
     nextLvlBtn.classList.remove('--disabled')
@@ -50,6 +51,13 @@ function clearOptions() {
   })
 }
 
+function setNewGameOptions() {
+  clearOptions()
+  concatArr = birdsData[typeOfBirdIndex].concat()
+  arrOfCurrTypeBirds = shuffle(concatArr)
+  setOptions()
+}
+
 nextLvlBtn.addEventListener('click', () => {
   concatArr = birdsData[typeOfBirdIndex].concat()
   arrOfCurrTypeBirds = shuffle(concatArr)
@@ -58,3 +66,5 @@ nextLvlBtn.addEventListener('click', () => {
 })
 
 setOptions()
+
+export {setNewGameOptions}

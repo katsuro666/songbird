@@ -2,7 +2,6 @@ import birdsData from "./helpers/birdsData";
 import getRandomInt from "./helpers/getRandomInt";
 import {nextLvlBtn} from './next-lvl-btn';
 
-let picture = document.querySelector('.question__picture')
 let guessedPicture = document.querySelector('.question__picture--guessed')
 let name = document.querySelector('.question__name')
 let player = document.querySelector('.question__player')
@@ -35,4 +34,11 @@ nextLvlBtn.addEventListener('click', () => {
   name.textContent = '******'
 })
 
-export {typeOfBirdIndex, bird, showGuessedBird}
+function setNewGame() {
+  typeOfBirdIndex = 0
+  setRandomBird()
+  name.textContent = '******'
+  guessedPicture.classList.add('visually-hidden')
+}
+
+export {typeOfBirdIndex, bird, showGuessedBird, setNewGame}
