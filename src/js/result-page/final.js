@@ -24,6 +24,13 @@ function showFinal() {
     } else {
       resultLose.classList.remove('visually-hidden')
       btnContainer.classList.remove('visually-hidden')
+      if (showScore() >= 20) {
+        resultLose.textContent = 'Хороший результат! Попробуешь улучшить его?'
+      } else if (showScore() >= 10) {
+        resultLose.textContent = 'Неплохо, но можно лучше! Может, попробуем ещё раз?'
+      } else {
+        resultLose.textContent = 'Давай честно, ты просто рандомно тыкал в ответы? :)'
+      }
     }
   }
 }

@@ -59,6 +59,8 @@ function setNewGameOptions() {
   concatArr = birdsData[typeOfBirdIndex].concat()
   arrOfCurrTypeBirds = shuffle(concatArr)
   setOptions()
+  descInvitation.classList.remove('visually-hidden')
+  descWrapper.classList.add('visually-hidden')
 }
 
 nextLvlBtn.addEventListener('click', () => {
