@@ -4,6 +4,7 @@ import {typeOfBirdIndex, bird, showGuessedBird} from './question'
 import showDesc from './description'
 import {nextLvlBtn} from './next-lvl-btn'
 import {countScore} from './score'
+import {correctAnswer, wrongAnswer} from './helpers/audio'
 
 
 let options = document.querySelectorAll('.options__el')
@@ -29,9 +30,11 @@ function answerSelected() {
     points = 5
     nextLvlBtn.disabled = false
     nextLvlBtn.classList.remove('--disabled')
+    correctAnswer()
   } else {
     this.classList.add('--wrong')
     points--
+    wrongAnswer()
   }
 }
 
