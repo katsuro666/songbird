@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --hot --open"
+    "start": "webpack-dev-server --mode development --hot --open",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": "> 0.25%, not dead",
   "keywords": [],
@@ -19,6 +20,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^8.0.0",
