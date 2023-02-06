@@ -517,7 +517,7 @@ audio::-webkit-media-controls-time-remaining-display {
 .--wrong {
   background-color: rgba(213, 76, 128, 0.3);
   transition: opacity 1s ease-in-out;
-  opacity: 0;
+  opacity: 0.3;
   text-decoration: line-through;
 }
 

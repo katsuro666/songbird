@@ -22,20 +22,29 @@ function answerSelected() {
   descWrapper.classList.remove('visually-hidden')
   showDesc(this.textContent)
 
-  if (this.textContent === bird.name) {
-    this.classList.add('--right')
-    showGuessedBird()
-    countScore(points)
-    player.pause()
-    points = 5
-    nextLvlBtn.disabled = false
-    nextLvlBtn.classList.remove('--disabled')
-    correctAnswer()
-  } else {
-    this.classList.add('--wrong')
-    points--
-    wrongAnswer()
+  if(!this.classList.contains('--wrong') && !this.classList.contains('--right')) {
+    if (this.textContent === bird.name) {
+      this.classList.add('--right')
+      showGuessedBird()
+      countScore(points)
+      player.pause()
+      points = 5
+      nextLvlBtn.disabled = false
+      nextLvlBtn.classList.remove('--disabled')
+      correctAnswer()
+    } else {
+      this.classList.add('--wrong')
+      wrongAnswer()
+      if (points > 0) {
+        points--
+      } else {
+        points = points
+      }
+    }
+
   }
+
+
 }
 
 function setOptions() {
